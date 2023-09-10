@@ -25,7 +25,7 @@
                        <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
                        <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
                        <li class="nav-item"><a class="nav-link" href="#">Our Work</a></li>
-                       <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                       <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
                    </ul>
                </div> 
                </nav>
@@ -153,11 +153,25 @@
             </div>
         </div>
     </section>
-    <section class="footer">
-        <div class="container-fluid">
-
+    <section class="footer" id="contact">
+        <div class="container-fluid  mb-5;">
+            <div style="align-items: center;">
+                <h2 style="text-align: center;">CONTACT WITH US</h2>
+                <form class="form-group">
+                    <label for="name" class="form-label col-md-2">NAME</label>
+                    <input id="name" class="form-control" required placeholder="Enter your name" type="text"/>
+                    <br/>
+                    <label for="email" class="form-label col-md-2">EMAIL</label>
+                    <input id="email" class="form-control" required placeholder="Enter your email" type="email"/>
+                    <br/>
+                    <label for="message" class="form-label col-md-2">MESSAGE</label>
+                    <textarea cols="10" id="message" rows="5" required class="form-control"></textarea>
+                    <br/>
+                    <input type="submit" class="btn btn-success w-100" onclick="alert('Data send successfully!')" value="SEND YOUR MESSAGE">
+                </form>
+            </div>
         </div>
     </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>
